@@ -52,4 +52,4 @@ Para ejecutar los proyectos de este repositorio necesitarás contar con:
 ├── 03-typescript/       # Tipado, interfaces y POO
 ├── 04-nestjs/           # Proyectos Backend y APIs RESTful
 ├── 05-reactjs/          # Aplicaciones Frontend e interfaces
-└── README.md            # KARENdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+└── README.md            # KAREN
