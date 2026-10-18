@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport -  Karen Inapanta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>AIRPORT INTERNATIONAL</h1>
+    <p><i>"Conectando tu destino con el mundo"</i></p>
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="vuelos.html">Vuelos</a> | 
+        <a href="servicios.html">Servicios</a> | 
+        <a href="multimedia.html">Multimedia</a> | 
+        <a href="registro.html">Registro</a>
+    </nav>
+    <hr>
+    <main>
+        <h2>Registro de Pasajeros</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos del Pasajero</legend>
+
+                <label for="codigo">Código de Reserva:</label>
+                <input type="text" id="codigo" name="codigo" placeholder="VUE-001" required>
+                <br><br>
+
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Karen Inapanta" required>
+                <br><br>
+
+                <label for="destino">Ciudad de Destino:</label>
+                <select id="destino" name="destino" required>
+                    <option value="">Selecciona una Ciudad</option>
+                    <option value="quito">Quito</option>
+                    <option value="bogota">Bogotá</option>
+                    <option value="miami">Miami</option>
+                </select>
+                <br><br>
+
+                <label for="fecha">Fecha de Vuelo:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles del Viaje</legend>
+                <p>Clase de Viaje:</p>
+                <input type="radio" id="ejecutiva" name="clase" value="ejecutiva" required>
+                <label for="ejecutiva">Ejecutiva</label>
+                <input type="radio" id="economica" name="clase" value="economica">
+                <label for="economica">Económica</label>
+                <p>Servicios Adicionales:</p>
+                <input type="checkbox" id="vip" name="servicios" value="vip">
+                <label for="vip">Sala VIP</label><br>
+                <input type="checkbox" id="equipaje" name="servicios" value="equipaje">
+                <label for="equipaje">Equipaje Extra</label>
+            </fieldset>
+            <br>
+            <button type="submit">Registrar Vuelo</button>
+            <button type="reset">Limpiar Datos</button>
+        </form>
+    </main>
+    <hr>
+    <p>Airport International</p>
+
+</body>
+</html>
