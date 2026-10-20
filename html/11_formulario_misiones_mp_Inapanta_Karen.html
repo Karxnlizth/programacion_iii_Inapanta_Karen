@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_Karen Inapanta</title>
+</head>
+<body>
+    <header>
+        <h1>Airport</h1>
+        <h2>🌸 Excelencia en cada vuelo</h2>
+    </header>
+    <hr>
+    <main>
+        <form action="#" method="get" id="registro-vuelos">
+            <fieldset>
+                <legend>Información del Vuelo</legend>
+                <label for="codigo">
+                    Código de Vuelo:
+                </label>
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="VUE-001"
+                       maxlength="10"
+                       required>
+                <br><br>
+                <label for="responsable">
+                    Capitán a Cargo:
+                </label>
+                <select id="responsable"
+                        name="responsable"
+                        required>
+                    <option value="">
+                        Selecciona un Comandante
+                    </option>
+                    <option value="andrea">
+                        Capitana Andrea
+                    </option>
+                    <option value="carlos">
+                        Capitán Carlos
+                    </option>
+                    <option value="mateo">
+                        Capitán Mateo
+                    </option>
+                </select>
+                <br><br>
+                <label for="planeta">
+                    Aeropuerto de Destino:
+                </label>
+                <input type="text"
+                       id="planeta"
+                       name="planeta"
+                       placeholder="Ej. París (CDG)"
+                       required>
+                <br><br>
+                <label for="fecha">
+                    Fecha del Vuelo:
+                </label>
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Características del Vuelo</legend>
+                <p>Prioridad de Embarque:</p>
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+                <label for="alta">Alta (VIP)</label>
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
+                <label for="media">Media</label>
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+                <label for="baja">Estándar</label>
+                <br><br>
+                <label for="riesgo">
+                    Nivel de Capacidad (1 a 10):
+                </label>
+                <input type="number"
+                       id="riesgo"
+                       name="riesgo"
+                       min="1"
+                       max="10"
+                       value="5">
+                <p>Servicios Requeridos:</p>
+                <input type="checkbox"
+                       id="nave"
+                       name="recursos"
+                       value="nave">
+                <label for="nave">
+                    Catering a Bordo
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="droides"
+                       name="recursos"
+                       value="droides">
+                <label for="droides">
+                    Asistencia de Equipaje
+                </label>
+                <br>
+                <input type="checkbox"
+                       id="equipo"
+                       name="recursos"
+                       value="equipo">
+                <label for="equipo">
+                    Conexión Wi-Fi Premium
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Detalles e Itinerario</legend>
+                <label for="descripcion">
+                    Observaciones del Vuelo:
+                </label>
+                <br>
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe detalles..."
+                          required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">
+                Registrar Vuelo
+            </button>
+            <button type="reset">
+                Limpiar Datos
+            </button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            <small>
+                Airport - Excelencia en cada vuelo
+            </small>
+        </p>
+    </footer>
+</body>
+</html>
