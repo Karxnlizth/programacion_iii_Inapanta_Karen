@@ -9,11 +9,11 @@
 }
 header{
     grid-area: header;
-    background-color: #334155;
+    background-color: #6cb38f;
 }
 nav{
     grid-area: main;
-    background-color: #334155;
+    background-color: #74869f;
 }
 aside{
     grid-area: aside;
