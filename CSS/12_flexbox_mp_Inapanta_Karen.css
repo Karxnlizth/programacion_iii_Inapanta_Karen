@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fce8f3;
+    color: #4a3b5c;
+}
+
+.contendor1{
+    display: flex;
+    flex-direction: row;
+    background-color: #d1e8ff;
+    padding: 20px;
+}
+.contendor2{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #d1e8ff;
+    padding: 20px;
+}
+.contendor3{
+    display: flex;
+    flex-direction: column;
+    background-color: #d1e8ff;
+    padding: 20px;
+}
+.contendor4{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #d1e8ff;
+    padding: 20px;
+}
+.pasajero{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #b07dbe;
+    color: #4a3b5c;
+}
+
+.escuadrones1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.escuadrones2{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.escuadrones3{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.escuadrones4{
+    display: flex;
+    justify-content: center;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.escuadrones5{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.escuadrones6{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8dff5;
+    padding: 20px;
+}
+.tripulacion{
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #d47a9e;
+    color: #4a3b5c;
+}
