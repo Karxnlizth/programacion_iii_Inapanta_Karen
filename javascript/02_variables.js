@@ -33,4 +33,3 @@ console.log("Nuevo Personaje ", personaje);
 
 const protagonista = "Jerry";
 console.log("Protagonista ", protagonista);
-protagonista="kajshbdkjasd"

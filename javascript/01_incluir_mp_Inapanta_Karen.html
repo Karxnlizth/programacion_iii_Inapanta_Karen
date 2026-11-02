@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Control - JavaScript</title>
+    <script>
+        alert('¡Atención pasajero! Inicio de torre de control');
+        console.log('Sistema de vuelo inicializado en la página');
+    </script>
+</head>
+<body>
+    <h1>Torre de Control de Vuelos</h1>
+    <h2>Panel de Operaciones</h2>
+    <button onclick="alert('¡Despegue autorizado!')">
+        Autorizar Vuelo
+    </button>
+    <input type="text"
+        oninput="console.log(this.value)"
+        placeholder="Escribe el destino...">
+
+    <input type="text"
+    onchange="console.log('Destino guardado:', this.value)"
+    placeholder="Escribe destino y haz clic fuera...">
+
+    <input type="text"
+    onfocus="console.log('El operador está ingresando a la pista')"
+    onblur="alert('¡Atención! Saliste de la pista')"
+    placeholder="Haz clic dentro y fuera de la pista...">
+
+    <script src="01_incluir_mp_Inapanta_Karen.js"></script>
+</body>
+</html>

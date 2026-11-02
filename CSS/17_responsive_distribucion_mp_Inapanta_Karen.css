@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: #fffdf7; /* Fondo general marfil/claro de la paleta */
+    color: #6b4a5a; /* Texto principal en tono oscuro elegante */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Mobile First */
+
+
+/* Encabezado */
+
+
+.encabezado {
+    padding: 2rem 1rem;
+    background-color: #ffb8d2; /* Rosado medio de la paleta */
+    text-align: center;
+    border-bottom: 4px solid #e58fb0;
+}
+
+
+.encabezado h1 {
+    font-size: 2rem;
+    color: #6b4a5a; /* Tono oscuro para contraste fuerte */
+}
+
+.encabezado p {
+    color: #4a323d;
+}
+
+
+/* Menú móvil */
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+
+    padding: 1rem;
+    background-color: #e58fb0; /* Rosado más profundo de la paleta */
+}
+
+
+.menu a {
+    color: #fffdf7;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/* Distribución móvil */
+
+
+.distribucion {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+
+
+    width: 92%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+
+/* Contenido principal */
+
+
+.principal {
+    min-width: 0;
+    padding: 1.25rem;
+    background-color: #ffffff; /* Blanco limpio */
+    border-radius: 12px;
+    border: 2px solid #ffd6e8;
+}
+
+
+h2 {
+    color: #6b4a5a;
+}
+
+
+/* Misiones: una columna */
+
+
+.misiones {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+
+.mision {
+    padding: 1.25rem;
+    background-color: #ffd6e8; /* Rosado claro muy suave */
+    color: #6b4a5a;
+    border: 2px solid #e58fb0;
+    border-radius: 10px;
+}
+
+
+.mision h3 {
+    color: #6b4a5a;
+}
+
+.mision p {
+    color: #4a323d;
+}
+
+
+/* Escuadrón */
+
+
+#personal {
+    margin-top: 2rem;
+}
+
+
+.escuadron {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+
+.piloto {
+    padding: 1.25rem;
+    background-color: #ffd6e8;
+    color: #6b4a5a;
+    border: 2px solid #e58fb0;
+    border-radius: 10px;
+}
+
+
+.piloto h3 {
+    color: #6b4a5a;
+}
+
+.piloto p {
+    color: #4a323d;
+}
+
+
+/* Panel lateral */
+
+
+.lateral {
+    min-width: 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    color: #6b4a5a;
+    border-left: 6px solid #6b4a5a; /* Borde lateral oscuro para contraste elegante */
+    border-radius: 10px;
+    border-top: 2px solid #ffd6e8;
+    border-right: 2px solid #ffd6e8;
+    border-bottom: 2px solid #ffd6e8;
+}
+
+
+.lateral ul {
+    padding-left: 1.5rem;
+}
+
+
+.estado {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #6b4a5a; /* Botón de estado con el tono oscuro de la paleta */
+    color: #fffdf7;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+/* Pie de página */
+
+
+footer {
+    padding: 1.5rem;
+    background-color: #ffb8d2;
+    color: #6b4a5a;
+    text-align: center;
+    border-top: 3px solid #e58fb0;
+}
+
+
+footer a {
+    color: #6b4a5a;
+    font-weight: bold;
+}
+
+
+/* Tabletas: desde 600px */
+
+
+@media (min-width: 600px) {
+
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .escuadron {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+}
+
+
+/* Computadoras: desde 1000px */
+
+
+@media (min-width: 1000px) {
+
+
+    .encabezado h1 {
+        font-size: 3rem;
+    }
+
+
+    .distribucion {
+        grid-template-columns:
+            minmax(0, 3fr) minmax(240px, 1fr);
+    }
+
+
+    .principal {
+        padding: 2rem;
+    }
+
+
+    .misiones {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .escuadron {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+
+}
