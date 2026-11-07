@@ -10,7 +10,7 @@ switch (dimension) {
         console.log("Estas en la dimensión C-500");
         break;
     case 4:
-        console.log("Estas en la dimensión de Alejandro");
+        console.log("Estas en la dimensión de Karen");
         break;
     default:
         console.log("No se que dimensión es esa");
