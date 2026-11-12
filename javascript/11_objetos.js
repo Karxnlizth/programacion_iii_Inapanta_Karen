@@ -41,8 +41,6 @@ for (let propiedad in nave) {
     console.log(propiedad + ": " + nave[propiedad]);
 }
 
-
-
 let inventario = {
     vino: 8,
     cristales: 10,
@@ -54,3 +52,4 @@ for (let objetos in inventario) {
     
 }
 console.log ("Total invetario" + total)
+
