@@ -68,6 +68,9 @@ for (let i = 0; i < cristalesRecolectados.length; i++) {
     console.log("Día " + (i + 1) + ": " + cristalesRecolectados[i] + " cristales recolectados");
 }
 console.log("Total de cristales recolectados: " + total);
+
+// Variable declarada para solucionar el ReferenceError
+let viajesExitosos = cristalesRecolectados.length;
 console.log("Numero de viajes exitossos: " + viajesExitosos);
 
 
