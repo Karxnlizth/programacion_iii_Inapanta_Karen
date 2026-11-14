@@ -1,0 +1,26 @@
+let personajes = ['Rick', 'Morty', 'Summer', 'Beth', 'Karen','Jerry'];
+console.log("Elemento 0: " + personajes[0]);
+console.log("Elemento 1: " + personajes[1]);
+console.log("Elemento 2: " + personajes[2]);
+console.log("Elemento 3: " + personajes[3]);
+console.log("Elemento 4: " + personajes[4]);
+console.log("Tamaño del arreglo: " + personajes.length);
+
+console.log("personajes: " , personajes);
+console.log("Incluir elementos a un arreglo en Push");
+personajes.push("Carrera");
+console.log("personajes: " , personajes);
+personajes.unshift("Lisseth");
+console.log("personajes: " , personajes);
+personajes.push("Lizeth");
+console.log("personajes: " , personajes);
+console.log("Modificar elementos a un arreglo ");
+personajes[0] = "Liseth";
+console.log("personajes: " , personajes);
+console.log("Elementos un elemento del arreglo: ");
+personajes.pop();
+console.log("personajes: " , personajes);
+personajes.shift();
+console.log("personajes: " , personajes);
+personajes.splice(1, 1);
+console.log("personajes: " , personajes);
