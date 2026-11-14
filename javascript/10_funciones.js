@@ -54,8 +54,6 @@ function evaluarCombustibleExamen(combustible, correctas, totalPreguntas) {
 evaluarCombustibleExamen(15, 8, 10);
 evaluarCombustibleExamen(50, 6, 10);
 
-
-
 let cristalesMisiones = [15, 30, 45, 10, 25];
 function calcularTotalCristales(cristales) {
     let total = 0;
@@ -81,5 +79,3 @@ function contarMisionesExitosas(cristales) {
 }
 let exitosas = contarMisionesExitosas(CristalesPorMision);
 console.log("Número de misiones exitosas: " + exitosas);
-
-
