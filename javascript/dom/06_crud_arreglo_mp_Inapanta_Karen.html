@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Arreglo - Airport</title>
+    <script src="06_crud_arreglo_mp_Inapanta_Karen.js" defer></script>
+</head>
+<body>
+    <h1>Registro de Vuelos - Airport</h1>
+    <h2 id="tituloFormulario">Registro de Pasajero</h2>
+    <form id="formulario">
+        <input type="text"
+        id="nombre" placeholder="Nombre del pasajero">
+        <select id="ruta">
+            <option value="UIO-GYE">UIO-GYE</option>
+            <option value="UIO-CUE">UIO-CUE</option>
+            <option value="UIO-PTY">UIO-PTY</option>
+        </select>
+        <select id="estado">
+            <option value="Embarcado">Embarcado</option>
+            <option value="En espera">En espera</option>
+            <option value="Cancelado">Cancelado</option>
+        </select>
+        <button type="submit" id="guardar">Agregar</button>
+        <button type="button" id="cancelar">Cancelar</button>
+    </form>
+    <h2>Pasajeros Registrados</h2>
+    <h2 id="cantidad">Cantidad</h2>
+    <div id="contenedor"></div>
+</body>
+</html>
